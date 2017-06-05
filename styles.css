@@ -251,7 +251,11 @@ header p {
 
 .navbar-default {
   background-color: #f9f9f9;
-  border-color: #fcb23e;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.22);
 }
 .navbar-default .navbar-brand {
   color: #000000;
@@ -318,22 +322,23 @@ header p {
     color: #ffffff;
     background-color: #fcb23e;
   }
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar-toggle {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+  }
 }
 
 
-.navbar-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  margin: 0px;
-  padding: 0px;
-}
-.navbar-toggle {
-  margin: 0px;
-  padding: 0px;
-  border: none;
-}
+
 
 
 
