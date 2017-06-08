@@ -13,7 +13,7 @@ a,
 video {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 html,
 body {
@@ -99,8 +99,14 @@ nav {
 .bg-opaque {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 40px;
+  padding: 30px;
   }
+.bg-main {
+  background-image: url("img/iiclbmain.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .divider {
   margin-top: 800px;
 }
@@ -133,7 +139,7 @@ nav {
   text-align: center;
 }
 header h1 {
-  font-size: 4em!important;
+  font-size: 4em;
 }
 header p {
   font-size: 1.5em;
@@ -203,30 +209,69 @@ header p {
 */
 
 .button1 {
-  background-color: rgba(38, 195, 232, 0.7);
-}
-.button1:hover{
-  background-color: rgba(38, 195, 232, 1);
-}
-.button2 {
-  background-color: rgba(252, 178,62, 0.7);
-}
-.button2:hover {
-  background-color: rgba(252, 178,62, 1);
-}
-.button3 {
-  background-color: rgba(55, 117, 175, 0.7);
-}
-.button3:hover {
-  background-color: rgba(55, 117, 175, 1);
-}
-.button4 {
   background-color: rgba(46, 64, 148, 0.7);
+  margin-right: 55px;
 }
-.button4:hover {
+.button1:hover {
   background-color: rgba(46, 64, 148, 1);
 }
+.button2 {
+  background-color: rgba(38, 195, 232, 0.7);
+  margin-right: 55px;
+}
+.button2:hover{
+  background-color: rgba(38, 195, 232, 1);
+}
+.button3 {
+  background-color: rgba(252, 178,62, 0.7);
+  margin-right: 55px;
+}
+.button3:hover {
+  background-color: rgba(252, 178,62, 1);
+}
+.button4 {
+  background-color: rgba(55, 117, 175, 0.7);
+  margin-right: 55px;
+}
+.button4:hover {
+  background-color: rgba(55, 117, 175, 1);
+}
 
+
+.buttonDonate {
+  width:90px;
+  height:90px;
+  display:inline-block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:7px;
+  margin-left:auto;
+  margin-right:auto;
+  left:0px;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background: #109bce;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+}
+.buttonDonate:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -239,6 +284,10 @@ header p {
 
 */
 
+.dropdown-menu li a {
+  padding: 10px!important;
+}
+
 .navbar-toggle {
   margin-top: 50px;
   padding: 20px;
@@ -246,16 +295,16 @@ header p {
 .navbar-toggle .icon-bar {
     border: 1px solid #353535;
 }
-
-
+.navbar-default li a {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 .navbar-default {
   background-color: #f9f9f9;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.22);
+  font-size: 1.5em;
 }
 .navbar-default .navbar-brand {
   color: #000000;
@@ -289,6 +338,7 @@ header p {
 }
 .navbar-default .navbar-toggle {
   border-color: #fcb23e;
+  font-size: 2em;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -335,6 +385,40 @@ header p {
     padding: 0px;
     border: none;
   }
+  .center-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-opaque {
+    background-color: rgba(0,0,0,0.7);
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .navbar-nav li a:first-child {
+    padding-top: none;
+    padding-bottom: none;
+  }
+  .dropdown-menu li a {
+    padding: 10px!important;
+  }
+  .buttonDonate {
+    
+  }
+
+
+}
+
+@media (max-width: 1023px) {
+  .navbar-nav li a:first-child {
+      padding-top: auto;
+      padding-bottom: auto;
+      font-size: 0.8em;
+  }
+  .dropdown-menu li a {
+    padding: 20px!important;
+  }
+
 }
 
 
@@ -443,4 +527,13 @@ header p {
 
   .main-header {
     top: 18%;
-  }}
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+  header p {
+    font-size: 1.5em;
+  }
+
+}
