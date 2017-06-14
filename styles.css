@@ -26,7 +26,9 @@ hr {
   background: #333;
   background-image: linear-gradient(to right, #203C38, #546431, #203C38);
 }
-
+p {
+  font-size: 16px;
+}
 
 /*
 
@@ -39,7 +41,7 @@ footer {
   z-index: 2;
   background-color: #F8F8F8;
   padding: 1px 0;
-  color: black;
+  color: white;
 }
 video {
   margin: 0;
@@ -65,10 +67,11 @@ nav {
    color: black;
  }
  button {
-   padding: 30px 10px;
    font-size: 2em;
    color: white;
    border: none;
+   padding: 0px;
+   background-color: rgba(0,0,0,0);
  }
 
  /*
@@ -82,12 +85,15 @@ nav {
   color: white;
 }
 .bg-secondary {
-  background-color: #546431;
+  background-color: #00aeef;
   color: white;
 }
 .bg-tertiary {
   background-color: #353535;
   color: white;
+}
+.bg-footer {
+  background-color: #373737;
 }
 .bg-white-opaque {
   background-color: rgba(255, 255, 255, 0.7);
@@ -103,7 +109,13 @@ nav {
   }
 .bg-main {
   background-image: url("img/iiclbmain.jpeg");
-  background-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-impact {
+  background-image: url("img/iiclbimpact.jpeg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -172,7 +184,7 @@ header p {
   height: auto;
   transform: translate(-50%, -50%);
 }
-.row{
+.row {
   margin: 0;
   padding: 0;
 }
@@ -201,6 +213,17 @@ header p {
   max-width: 1000px;
   text-align: center;
 }
+.vertical-center {
+  padding: 6% 0 0 0;
+}
+.social {
+  filter: grayscale(100%);
+}
+.social:hover {
+  filter: grayscale(0%);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.8), 0 10px 10px rgba(0,0,0,0.8);
+}
+
 
 /*
 
@@ -209,29 +232,33 @@ header p {
 */
 
 .button1 {
-  background-color: rgba(46, 64, 148, 0.7);
-  margin-right: 55px;
+  background-color: rgba(46, 64, 148, 0.5);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .button1:hover {
   background-color: rgba(46, 64, 148, 1);
 }
 .button2 {
   background-color: rgba(38, 195, 232, 0.7);
-  margin-right: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .button2:hover{
   background-color: rgba(38, 195, 232, 1);
 }
 .button3 {
   background-color: rgba(252, 178,62, 0.7);
-  margin-right: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .button3:hover {
   background-color: rgba(252, 178,62, 1);
 }
 .button4 {
   background-color: rgba(55, 117, 175, 0.7);
-  margin-right: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .button4:hover {
   background-color: rgba(55, 117, 175, 1);
@@ -271,6 +298,59 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.impact-box1 {
+ background-color: rgba(0,0,0,0.7);
+ color: white;
+ padding: 50px 0 50px 0;
+ margin: 50px 0 50px 0;
+}
+
+.impact-box2 {
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 50px 0 50px 0;
+  margin: 50px 0 50px 0;
+}
+.impact-box3 {
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 50px 0 50px 0;
+  margin: 50px 0 50px 0;
+}
+
+
+.impact-box {
+    position: relative;
+}
+
+.impact-box::before,
+.impact-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.impact-box1::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-right-color: rgba(38, 195, 232, 1);
+    border-bottom-color: rgba(38, 195, 232, 1);
+}
+.impact-box2::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-right-color: rgba(55, 117, 175, 1);
+    border-bottom-color: rgba(55, 117, 175, 1);
+}
+.impact-box3::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-right-color: rgba(252, 178,62, 1);
+    border-bottom-color: rgba(252, 178,62, 1);
 }
 
 
@@ -403,7 +483,7 @@ header p {
     padding: 10px!important;
   }
   .buttonDonate {
-    
+
   }
 
 
@@ -444,58 +524,6 @@ header p {
 .brand-logo {
   margin-bottom: 20px;
 }
-
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(32, 60, 56, 0.5);
-}
-#custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-width: 0px;
-    border-radius: 0px;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(32, 60, 56, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(137, 151, 94, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(85, 85, 85, 1);
-    background-color: rgba(231, 231, 231, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #ddd;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #888;
-}
-#mc_embed_signup{
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-  width: 100%;
-}
-#mobile-hero {
-  display: none;
-}
-#contact_form {
-  padding-top: 200px;
-}
-
 /*
 
   MEDIA QUERIES
@@ -503,27 +531,6 @@ header p {
 */
 
 @media only screen and (max-width : 767px) {
-
-  video {
-    display: none;
-  }
-
-  #mobile-hero {
-    display: block;
-    background-image: url("images/bubbastrain.jpg");
-    position: fixed;
-    top: 50%; left: 50%;
-    z-index: 1;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    background-position: center;
-  }
-  #contact_form {
-    padding-top: 100px;
-  }
 
   .main-header {
     top: 18%;
