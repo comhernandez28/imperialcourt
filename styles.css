@@ -353,6 +353,10 @@ header p {
     border-bottom-color: rgba(252, 178,62, 1);
 }
 
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
 
 
 
@@ -366,6 +370,9 @@ header p {
 
 .dropdown-menu li a {
   padding: 10px!important;
+}
+.dropdown-menu {
+  position: static;
 }
 
 .navbar-toggle {
@@ -381,9 +388,8 @@ header p {
 }
 
 .navbar-default {
-  background-color: #f9f9f9;
+  background-color: rgba(0,0,0,0);
   border: none;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.22);
   font-size: 1.5em;
 }
 .navbar-default .navbar-brand {
@@ -436,6 +442,15 @@ header p {
 }
 .navbar-default .navbar-link:hover {
   color: black;
+}
+
+@media (min-width: 768px){
+  .navbar-nav{
+     margin: 0 auto;
+     display: table;
+     table-layout: fixed;
+     float: none;
+  }
 }
 
 @media (max-width: 767px) {
