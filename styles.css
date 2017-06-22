@@ -57,12 +57,7 @@ a {
 }
 section {
   padding: 100px 0;
-  position: relative;
-  z-index: 2;
 }
-nav {
-  z-index: 2;
- }
  textarea {
    color: black;
  }
@@ -155,34 +150,6 @@ header h1 {
 }
 header p {
   font-size: 1.5em;
-}
-.main-header-black {
-  color: black;
-  position: relative;
-  top: 25%;
-  z-index: 2;
-  margin: 0 auto;
-  max-width: 1000px;
-  text-align: center;
-}
-.main-header-black h1 {
-  font-size: 4em;
-}
-.main-header-black p {
-  font-size: 2em;
-}
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
-}
-.video {
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
 }
 .row {
   margin: 0;
@@ -357,8 +324,15 @@ header p {
     margin-bottom: 25px;
 }
 
-
-
+.footer-left {
+  border-right: 2px white solid;
+}
+.footer-middle {
+  border-right: 2px white solid;
+}
+.footer-right {
+  border-right: 2px white solid;
+}
 
 
 
@@ -368,11 +342,9 @@ header p {
 
 */
 
+
 .dropdown-menu li a {
   padding: 10px!important;
-}
-.dropdown-menu {
-  position: static;
 }
 
 .navbar-toggle {
@@ -391,6 +363,7 @@ header p {
   background-color: rgba(0,0,0,0);
   border: none;
   font-size: 1.5em;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
 }
 .navbar-default .navbar-brand {
   color: #000000;
@@ -515,8 +488,6 @@ header p {
   }
 
 }
-
-
 
 
 
