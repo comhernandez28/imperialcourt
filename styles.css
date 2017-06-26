@@ -191,6 +191,17 @@ header p {
   filter: grayscale(0%);
   box-shadow: 0 14px 28px rgba(0,0,0,0.8), 0 10px 10px rgba(0,0,0,0.8);
 }
+.social-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0px -14px 0 -14px;
+}
+@media (max-width: 1025px) {
+  .social-header {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0px -14px 0 -14px;
+  }
+}
+
 
 
 /*
@@ -330,9 +341,17 @@ header p {
 }
 .footer-middle {
   border-right: 2px white solid;
+  padding: 35px 0 35px 0;
 }
 .footer-right {
   border-right: 2px white solid;
+  padding: 20px 0 60px 0;
+}
+@media (max-width: 1023px) {
+  .footer-right {
+    padding: 20px 0 20px 0;
+  }
+
 }
 
 
