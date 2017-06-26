@@ -212,37 +212,56 @@ header p {
 
 .button1 {
   background-color: rgba(46, 64, 148, 0.5);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .button1:hover {
   background-color: rgba(46, 64, 148, 1);
 }
 .button2 {
   background-color: rgba(38, 195, 232, 0.7);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .button2:hover{
   background-color: rgba(38, 195, 232, 1);
 }
 .button3 {
   background-color: rgba(252, 178,62, 0.7);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .button3:hover {
   background-color: rgba(252, 178,62, 1);
 }
 .button4 {
   background-color: rgba(55, 117, 175, 0.7);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .button4:hover {
   background-color: rgba(55, 117, 175, 1);
 }
 
+
+@media (max-width: 768px){
+  .button1 {
+    background-color: rgba(46, 64, 148, 0.5);
+    margin: 0px -45px;
+  }
+  .button2 {
+    background-color: rgba(38, 195, 232, 0.7);
+    margin: 0px -45px;
+  }
+  .button3 {
+    background-color: rgba(252, 178,62, 0.7);
+    margin: 0px -45px;
+  }
+  .button4 {
+    background-color: rgba(55, 117, 175, 0.7);
+    margin: 0px -45px;
+  }
+}
 
 .buttonDonate {
   width:90px;
