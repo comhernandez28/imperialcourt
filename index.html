@@ -109,7 +109,7 @@
 
 
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default hide-mobile">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -163,6 +163,34 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="container-fluid" style="margin: 20px;">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <span class="mobile-only text-center" onclick="openNav()">
+      <i class="fa fa-2x fa-bars"></i>
+      </span>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -269,7 +297,7 @@
     <div class="row">
       <div class="col-xs-12 col-md-4 footer-left">
         <div>
-          <img src="img/iiclb200.png" />
+          <img src="img/iiclb-logo-white-final.png" width="200px" />
         </div>
       </div>
       <div class="col-xs-12 col-md-4 footer-middle">
