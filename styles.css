@@ -395,6 +395,7 @@ header p {
   .mobile-only {
     display: none;
   }
+
 }
 
 ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -533,6 +534,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   .hide-mobile {
     display: none;
+  }
+
+  .top-border-mobile {
+    border-top: 1px solid black;
   }
 
 
