@@ -530,9 +530,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .dropdown-menu li a {
     padding: 0px!important;
   }
-  .buttonDonate {
-
-  }
   .hide-mobile {
     display: none;
   }
@@ -545,10 +542,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   }
   .dropdown-menu li a {
     color: white;
+    font-size: 1.8em;
   }
   .dropdown-menu {
     padding: 0px;
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
 
