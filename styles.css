@@ -483,6 +483,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
      table-layout: fixed;
      float: none;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -527,7 +528,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding-bottom: none;
   }
   .dropdown-menu li a {
-    padding: 10px!important;
+    padding: 0px!important;
   }
   .buttonDonate {
 
@@ -539,6 +540,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .top-border-mobile {
     border-top: 1px solid black;
   }
+  .dropdown-menu li {
+    background-color: rgba(0,0,0,0.9);
+  }
+  .dropdown-menu li a {
+    color: white;
+  }
+  .dropdown-menu {
+    padding: 0px;
+    margin-left: 60px;
+  }
+
 
 
 
